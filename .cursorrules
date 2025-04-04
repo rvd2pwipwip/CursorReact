@@ -1,0 +1,61 @@
+# React Development Rules and Context
+
+## File Naming
+- React components: PascalCase (e.g., Button.jsx, UserProfile.jsx)
+- Utility files: camelCase (e.g., formatDate.js, apiService.js)
+- CSS modules: camelCase.module.css (e.g., button.module.css)
+
+## Component Structure
+- One component per file
+- Use functional components with hooks
+- Keep components focused and single-responsibility
+- Props should be destructured in function parameters
+
+## Code Style
+- Use 2 spaces for indentation
+- Use semicolons
+- Use single quotes for strings
+- Use template literals for string interpolation
+- Use arrow functions for component definitions
+
+## State Management
+- Use useState for local component state
+- Use useEffect for side effects
+- Keep state as close as possible to where it's used
+- Use context for global state when necessary
+
+## Styling
+- Use CSS modules for component-specific styles
+- Follow BEM naming convention for CSS classes
+- Keep styles close to their components
+- Use CSS variables for theming
+
+## Performance
+- Memoize expensive calculations
+- Use React.memo for pure components
+- Avoid unnecessary re-renders
+- Use proper key props in lists
+
+## Accessibility
+- Use semantic HTML elements
+- Include proper ARIA attributes
+- Ensure keyboard navigation
+- Maintain proper heading hierarchy
+
+## Testing
+- Write tests for complex logic
+- Test user interactions
+- Test component rendering
+- Test error states
+
+## Documentation
+- Document complex logic
+- Include prop types
+- Add component descriptions
+- Document side effects
+
+## Git Commit Messages
+- Use present tense
+- Be descriptive but concise
+- Reference issues when applicable
+- Follow conventional commits format 
