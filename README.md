@@ -50,10 +50,11 @@ src/
 
 ## Getting Started
 1. Install dependencies: `npm install`
-2. Start development server: `npm start`
-3. Open [http://localhost:3000](http://localhost:3000) to view it in the browser
+2. Start development server: `npm run dev`
+3. Open [http://localhost:5173](http://localhost:5173) to view it in the browser
 
 ## Learning Resources
 - [React Documentation](https://react.dev/)
 - [React Hooks Documentation](https://react.dev/warnings/invalid-hook-call-warning)
-- [React Patterns](https://reactpatterns.com/) 
+- [React Patterns](https://reactpatterns.com/)
+- [Vite Documentation](https://vitejs.dev/)
