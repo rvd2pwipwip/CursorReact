@@ -57,9 +57,13 @@
 
 .hero__button {
   padding: var(--spacing-md) var(--spacing-lg);
-  border-radius: var(--border-radius-md);
+  border-radius: 999px;
   font-weight: 500;
   transition: var(--transition-base);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
 }
 
 .hero__button--primary {

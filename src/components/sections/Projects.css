@@ -78,16 +78,17 @@
 .projects__tags {
   display: flex;
   flex-wrap: wrap;
-  gap: var(--spacing-xs);
+  gap: var(--spacing-sm);
   margin-bottom: var(--spacing-md);
 }
 
 .projects__tag {
-  background-color: var(--color-primary);
-  color: white;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--border-radius-sm);
+  background-color: transparent;
+  color: var(--color-text-secondary);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 999px;
   font-size: 0.875rem;
+  border: 1px solid var(--color-text-secondary);
 }
 
 .projects__link {
@@ -96,12 +97,12 @@
   background-color: var(--color-primary);
   color: white;
   text-decoration: none;
-  border-radius: var(--border-radius-sm);
-  transition: background-color 0.3s ease;
+  border-radius: 999px;
+  transition: none;
 }
 
 .projects__link:hover {
-  background-color: var(--color-primary-dark);
+  color: white;
 }
 
 /* Responsive design */

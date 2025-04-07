@@ -65,14 +65,14 @@
 .about__skill-bar {
   height: 8px;
   background-color: var(--color-background);
-  border-radius: var(--border-radius-sm);
+  border-radius: 999px;
   overflow: hidden;
 }
 
 .about__skill-level {
   height: 100%;
   background-color: var(--color-primary);
-  border-radius: var(--border-radius-sm);
+  border-radius: 999px;
 }
 
 .about__image {

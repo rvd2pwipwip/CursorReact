@@ -39,6 +39,7 @@
   border: none;
   cursor: pointer;
   padding: 0;
+  border-radius: 999px;
 }
 
 .header__menu-button span {
@@ -81,19 +82,28 @@
   color: var(--color-text);
   text-decoration: none;
   font-weight: 500;
-  padding: var(--spacing-xs) var(--spacing-sm);
-  border-radius: var(--border-radius-sm);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: 999px;
   transition: all 0.3s ease;
+  position: relative;
 }
 
 .header__nav-link:hover {
   color: var(--color-primary);
-  background-color: var(--color-background);
 }
 
 .header__nav-link--active {
   color: var(--color-primary);
-  background-color: var(--color-background);
+}
+
+.header__nav-link--active::after {
+  content: '';
+  position: absolute;
+  bottom: calc(-1 * var(--spacing-md) - 4px);
+  left: var(--spacing-md);
+  right: var(--spacing-md);
+  height: 4px;
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 768px) {
