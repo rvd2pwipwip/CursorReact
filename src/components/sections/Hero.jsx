@@ -1,8 +1,10 @@
 import { useState, useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './Hero.css';
 
 // Hero component - the first section visitors see
 const Hero = () => {
+  const navigate = useNavigate();
   // State for typing animation
   const [text, setText] = useState('');
   const fullText = "UX Designer & React Developer";
@@ -37,9 +39,12 @@ const Hero = () => {
             I create beautiful, intuitive user experiences and bring them to life with modern web technologies.
           </p>
           <div className="hero__cta">
-            <a href="#projects" className="hero__button hero__button--primary">
+            <button 
+              onClick={() => navigate('/projects')} 
+              className="hero__button hero__button--primary"
+            >
               View My Work
-            </a>
+            </button>
             <a href="#contact" className="hero__button hero__button--secondary">
               Get in Touch
             </a>

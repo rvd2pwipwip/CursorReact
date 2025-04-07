@@ -64,16 +64,15 @@
   align-items: center;
   justify-content: center;
   line-height: 1;
+  font-size: inherit;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .hero__button--primary {
   background-color: var(--color-primary);
   color: white;
-}
-
-.hero__button--primary:hover {
-  background-color: var(--color-secondary);
-  transform: translateY(-2px);
 }
 
 .hero__button--secondary {
@@ -85,7 +84,6 @@
 .hero__button--secondary:hover {
   background-color: var(--color-primary);
   color: white;
-  transform: translateY(-2px);
 }
 
 .hero__image {

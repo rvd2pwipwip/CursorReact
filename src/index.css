@@ -33,7 +33,3 @@ a {
   text-decoration: none;
   transition: color var(--transition-base);
 }
-
-a:hover {
-  color: var(--color-secondary);
-}
