@@ -1,7 +1,6 @@
 /* About section styles */
 .about {
   padding: var(--spacing-xl) 0;
-  background-color: var(--color-surface);
 }
 
 .about__container {

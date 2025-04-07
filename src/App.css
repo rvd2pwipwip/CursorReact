@@ -1,1 +1,10 @@
- 
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  padding-top: 80px; /* Adjust this value based on your header height */
+  flex: 1;
+} 
