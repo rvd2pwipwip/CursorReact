@@ -1,18 +1,20 @@
 /* About section styles */
 .about {
-  padding: var(--spacing-xl) 0;
+  min-height: calc(100vh - 80px); /* Subtract header height */
+  padding: var(--spacing-lg) 0;
 }
 
 .about__container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
+  height: 100%;
 }
 
 .about__title {
   font-size: 2.5rem;
   color: var(--color-text);
-  margin-bottom: var(--spacing-xl);
+  margin-bottom: var(--spacing-lg);
   text-align: center;
 }
 
