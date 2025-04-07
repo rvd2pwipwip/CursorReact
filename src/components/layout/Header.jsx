@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 const Header = () => {
@@ -11,9 +12,9 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__container">
-        <a href="/" className="header__logo">
+        <Link to="/" className="header__logo">
           Portfolio
-        </a>
+        </Link>
         
         <button 
           className={`header__menu-button ${isMenuOpen ? 'header__menu-button--open' : ''}`}
@@ -27,9 +28,39 @@ const Header = () => {
 
         <nav className={`header__nav ${isMenuOpen ? 'header__nav--open' : ''}`}>
           <ul className="header__nav-list">
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li className="header__nav-item">
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => 
+                  isActive ? 'header__nav-link header__nav-link--active' : 'header__nav-link'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Home
+              </NavLink>
+            </li>
+            <li className="header__nav-item">
+              <NavLink 
+                to="/about" 
+                className={({ isActive }) => 
+                  isActive ? 'header__nav-link header__nav-link--active' : 'header__nav-link'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="header__nav-item">
+              <NavLink 
+                to="/projects" 
+                className={({ isActive }) => 
+                  isActive ? 'header__nav-link header__nav-link--active' : 'header__nav-link'
+                }
+                onClick={() => setIsMenuOpen(false)}
+              >
+                Projects
+              </NavLink>
+            </li>
           </ul>
         </nav>
       </div>

@@ -28,7 +28,7 @@ const Hero = () => {
       <div className="hero__container">
         <div className="hero__content">
           <h1 className="hero__title">
-            Hi, I'm <span className="hero__name">rvd2pwipwip</span>
+            Hi, I'm <span className="hero__name">Huex Dude</span>
           </h1>
           <h2 className="hero__subtitle">
             {text}<span className="hero__cursor">|</span>
